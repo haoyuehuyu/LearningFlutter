@@ -17,8 +17,15 @@ class _UseURLLauncherPageState extends State<UseURLLauncherPage> {
       body: Center(
         child: RaisedButton(
           onPressed: () {
+
             var baiduURL = "https://www.baidu.com";
-            launch(baiduURL);
+
+            checkURLLaunch() async {
+              if ( await canLaunch(baiduURL)){
+                launch(baiduURL);
+              }
+            }
+            checkURLLaunch();
           },
           child: Text("打开百度"),
         ),
