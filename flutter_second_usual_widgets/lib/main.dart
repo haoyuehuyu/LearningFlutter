@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'container_test_page.dart';
+import 'image_test_page.dart';
+import 'text_test_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -14,7 +16,8 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text("组件测试"),),
-        body: ContainerPage(),
+        body: TextTestPage()
+        //ImageTestPage()//ContainerPage(),
       ),
     );
   }
