@@ -7,6 +7,7 @@ import 'list_view_test_page.dart';
 import 'list_view_horizontal_page.dart';
 import 'long_list_view_page.dart';
 import 'grid_view_page.dart';
+import 'form_field_page.dart';
 
 void main() => runApp(MyApp());
 
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text("组件测试"),),
-        body: GridViewPage()
+        body: FormFieldPage()//GridViewPage()
         //LongListViewPage(items: List<String>.generate(500, (i) => "item $i"))
         //ListViewHorizontalPage()//ListViewPage()
         //IconsTestPage()//TextTestPage()
