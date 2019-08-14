@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class LongListViewPage extends StatelessWidget {
   final List<String> items;
-  const LongListViewPage({Key key, @required this.items}) : super(key: key);
+  const LongListViewPage({Key key,  this.items}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

@@ -6,7 +6,15 @@ class IconsTestPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      child: _raiseIconBuilder(),
+      child: Column(
+        children: <Widget>[
+          _iconBuilder(),
+          Divider(),
+          _iconButtonBuilder(),
+          Divider(),
+          _raiseIconBuilder()
+        ],
+      ),
     );
   }
 

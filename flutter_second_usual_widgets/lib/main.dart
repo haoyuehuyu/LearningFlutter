@@ -22,11 +22,15 @@ class MyApp extends StatelessWidget {
       ),
       home: Scaffold(
         appBar: AppBar(title: Text("组件测试"),),
-        body: FormFieldPage()//GridViewPage()
-        //LongListViewPage(items: List<String>.generate(500, (i) => "item $i"))
-        //ListViewHorizontalPage()//ListViewPage()
-        //IconsTestPage()//TextTestPage()
-        //ImageTestPage()//ContainerPage(),
+        // body: FormFieldPage()
+        body:GridViewPage()
+        // body:LongListViewPage(items: List<String>.generate(500, (i) => "item $i"))
+        // body:ListViewHorizontalPage()
+        // body:ListViewPage()
+        // body:IconsTestPage()
+        // body:TextTestPage()
+        // body:ImageTestPage()
+        // body:ContainerPage(),
       ),
     );
   }
